@@ -50,7 +50,7 @@ body {
 }
 
 .current {
-  border: 1px solid green;
+  border: 2px solid green;
   border-radius: 10px;
 }
 
@@ -110,6 +110,11 @@ p {
   margin-top: 10px;
 }
 
+#restart {
+  font-size: 3vmin;
+  width: 50vmin;
+}
+
 .result {
   animation-name: result;
   animation-duration: 1s;
@@ -121,7 +126,7 @@ p {
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .startGame {
@@ -220,6 +225,12 @@ p {
 }
 
 @media only screen and (max-width: 750px) {
+  #scoreboard {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   #scoreboard {
     font-size: 1em;
   }
