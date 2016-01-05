@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.boardContainer div {
+  padding: 20px;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+}
+
+.board {
+  width: 70vmin;
+  height: 70vmin;
+  max-height: 70vmin;
+  max-width: 70vmin;
+  margin: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  margin: 0 auto;
+  background: #C2C2C2;
+  border-radius: 30px;
+}
+
+.board div {
+  height: 33%;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.current {
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+form input {
+  padding: 5px;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+  font-size: 10vmin;
+}
+
+.modal {
+  font-size: 1.5em;
+  color: black;
+}
+
+.modal-footer {
+  text-align: left;
+}
+
+p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.playerOne {
+  height: 40px;
+}
+
+.playerTwo {
+  height: 40px;
+}
+
+.playerOne p {
+  line-height: 40px;
+}
+
+.playerTwo p {
+  line-height: 40px;
+}
+
+.playerTwoInfo {
+  color: red;
+}
+
+.playerMoves {
+  color: blue;
+}
+
+.playerOneInfo {
+  color: blue;
+}
+
+.playerScoreInfo {
+  margin-top: 10px;
+}
+
+.result {
+  animation-name: result;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+#scoreboard {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.startGame {
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+  margin: 20px;
+}
+
+#submitButton {
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.winner {
+  animation-name: winner;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.woprMoves {
+  color: red;
+}
+
+#top-left {
+  border-left: none;
+  border-top: none;
+}
+
+#top-center {
+  border-top: none;
+}
+
+#top-right {
+  border-top: none;
+  border-right: none;
+}
+
+#middle-left {
+  border-left: none;
+}
+
+#middle-right {
+  border-right: none;
+}
+
+#bottom-left {
+  border-left: none;
+  border-bottom: none;
+}
+
+#bottom-center {
+  border-bottom: none;
+}
+
+#bottom-right {
+  border-bottom: none;
+  border-right: none;
+}
+
+@keyframes winner {
+  from { font-size: 10vmin; }
+  to { color: green; font-size: 15vmin; }
+}
+
+@-o-keyframes winner {
+  from { font-size: 10vmin; }
+  to { color: green; font-size: 15vmin; }
+}
+
+@-moz-keyframes winner {
+  from { font-size: 10vmin; }
+  to { color: green; font-size: 15vmin; }
+}
+
+@-webkit-keyframes winner {
+  from { font-size: 10vmin; }
+  to { color: green; font-size: 15vmin; }
+}
+
+@keyframes result {
+  to { background-color: green; font-weight: bold; }
+}
+
+@-o-keyframes result {
+  to { background-color: green; font-weight: bold; }
+}
+
+@-moz-keyframes result {
+  to { background-color: green; font-weight: bold; }
+}
+
+@-webkit-keyframes result {
+  to { background-color: green; font-weight: bold; }
+}
+
+@media only screen and (max-width: 550px) {
+  #scoreboard {
+    font-size: 1em;
+  }
+}
