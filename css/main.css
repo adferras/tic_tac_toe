@@ -268,7 +268,7 @@ p {
   to { background-color: green; font-weight: bold; }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
   #scoreboard {
     font-size: 1.5em;
   }
