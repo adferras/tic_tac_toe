@@ -54,14 +54,15 @@ body {
   border-radius: 10px;
 }
 
-form input {
-  padding: 5px;
-  cursor: pointer;
-}
-
 h2 {
   margin: 0;
   font-size: 7vmin;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  font-size: 3vmin;
 }
 
 .modal {
@@ -141,9 +142,47 @@ p {
   margin: 20px;
 }
 
+.styledRadio {
+  margin: auto;
+  float: left;
+  vertical-align: middle;
+}
+
 #submitButton {
   border-radius: 5px;
   margin: 20px;
+}
+
+[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px; margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+[type="radio"] + span {
+  display: block;
+}
+
+[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+[type="radio"]:checked + span:before {
+  background: green;
+  box-shadow: 0 0 0 0.25em #000;
 }
 
 .winner {
