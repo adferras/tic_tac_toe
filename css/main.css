@@ -24,8 +24,6 @@ body {
 .board {
   width: 70vmin;
   height: 70vmin;
-  max-height: 70vmin;
-  max-width: 70vmin;
   margin: auto;
   position: relative;
   top: 0;
@@ -129,10 +127,15 @@ p {
 }
 
 #scoreboard {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  font-size: 2.5em;
+  font-size: 3vmin;
+}
+
+#scoreboard .col-xs-4 {
+  width: 33%;
 }
 
 .startGame {
@@ -266,16 +269,4 @@ p {
 
 @-webkit-keyframes result {
   to { background-color: green; font-weight: bold; }
-}
-
-@media only screen and (max-width: 1000px) {
-  #scoreboard {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #scoreboard {
-    font-size: 1em;
-  }
 }
