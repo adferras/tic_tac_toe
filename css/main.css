@@ -118,10 +118,10 @@ p {
 }
 
 #scoreboard {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .startGame {
@@ -219,7 +219,7 @@ p {
   to { background-color: green; font-weight: bold; }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
   #scoreboard {
     font-size: 1em;
   }
