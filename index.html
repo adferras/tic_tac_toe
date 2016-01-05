@@ -44,10 +44,23 @@
 						</div>
 						<div class="modal-body">
 							<form action="">
-								<input id="humanVHuman" type="radio" name="opponent" value="human"> Human vs Human<br>
-								<input id="humanVComputer" type="radio" name="opponent" value="computer" checked> Human vs Computer<br><br>
-								<input id="chooseX" type='radio' name='marker' value = 'X' checked> First player: X<br>
-								<input id="chooseO" type='radio' name='marker' value = 'O'> First player: O<br>
+								<label for='humanVHuman'>
+									<input class='radio' id="humanVHuman" type="radio" name="opponent" value="human">
+										<span> Human vs Human</span>
+										<br>
+								</label>
+								<label for='humanVComputer'>
+									<input class='radio' id="humanVComputer" type="radio" name="opponent" value="computer" checked>
+									<span> Human vs Computer</span><br><br>
+								</label>
+								<label for='chooseX'>
+									<input class='radio' id="chooseX" type='radio' name='marker' value = 'X' checked>
+									<span> First player: X</span><br>
+								</label>
+								<label for='chooseO'>
+									<input class='radio' id="chooseO" type='radio' name='marker' value = 'O'>
+									<span> First player: O</span><br>
+								</label>
 								<input id='submitButton' type="button" name="button" value="Let's Play!" onClick="begin(this.form)">
 							</form>
 						</div>
